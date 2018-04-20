@@ -1,0 +1,238 @@
+{% extends "base_site.html" %}
+
+{% block title %} Forecast {% endblock title %}
+
+{% block stylesheets %}
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+  <div class="right_col" role="main">
+    <div class="title_left">
+      <h1>BioDigest</h1>
+    </div>
+    <br />
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard_graph">
+
+          <div class="row x_title">
+            <div class="col-md-6">
+              <h3>Forecast</h3>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <canvas id="forecastChart"></canvas>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard_graph">
+          <div class="row x_title">
+            <div class="col-md-6">
+              <h3>Inputs</h3>
+            </div>
+          </div>
+
+          <div class="col-md-9 col-sm-9 col-xs-12">
+            <canvas id="inputsChart"></canvas>
+          </div>
+
+          <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+            <div class="x_title">
+              <h2>Top Inputs</h2>
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-6">
+              <div>
+                <p id="input-1-header">Pig Manure</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 76%;">
+                    <div class="progress-bar bg-green" id="input-1-progress" role="progressbar" data-transitiongoal="99"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p id="input-2-header">Cassava</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 76%;">
+                    <div class="progress-bar bg-green" id="input-2-progress" role="progressbar" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-6">
+              <div>
+                <p id="input-3-header">Fish Waste Water</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 76%;">
+                    <div class="progress-bar bg-green" id="input-3-progress" role="progressbar" data-transitiongoal="40"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p id="input-4-header">Kitchen Food</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 76%;">
+                    <div class="progress-bar bg-green" id="input-4-progress" role="progressbar" data-transitiongoal="50"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-6">
+              <div>
+                <p id="input-5-header">Minicipal Fecal Residue</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 76%;">
+                    <div class="progress-bar bg-green" id="input-5-progress" role="progressbar" data-transitiongoal="99"></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p id="input-6-header">Tea</p>
+                <div class="">
+                  <div class="progress progress_sm" style="width: 76%;">
+                    <div class="progress-bar bg-green" id="input-6-progress" role="progressbar" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="">
+          <div class="x_content">
+            <div class="row">
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-signal"></i>
+                  </div>
+                  <div class="count" id="stats-entries-header">7</div>
+
+                  <h3>Entries</h3>
+                  <p>You're analyzing <span id="stats-entries">7</span> entries.</p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-usd"></i>
+                  </div>
+                  <div class="count" id="stats-revenue-header">179.13</div>
+
+                  <h3>Revenue</h3>
+                  <p>We project you'll make $<span id="stats-revenue">179.13</span> with these inputs.</p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-trash"></i>
+                  </div>
+                  <div class="count" id="stats-input-header">179</div>
+
+                  <h3>Total Waste Input</h3>
+                  <p>You've given us data for a total of <span id="stats-input">179</span> kg of input.</p>
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-percent"></i>
+                  </div>
+                  <div class="count" id="stats-accuracy-header">85</div>
+
+                  <h3>Accuracy</h3>
+                  <p>Our projections are accurate with <span id="stats-accuracy">85</span>% confidence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h3>Data</h3>
+          </div>
+
+          <div class="x_content">
+            <div class="table-responsive">
+              <table class="table table-striped jambo_table">
+                <thead>
+                  <tr class="headings">
+                    <th class="column-title">Entry </th>
+                    <th class="column-title">Pig Manure </th>
+                    <th class="column-title">Cassava </th>
+                    <th class="column-title">Fish Waste Water </th>
+                    <th class="column-title">Kitchen Food </th>
+                    <th class="column-title">Municipal Fecal Residue </th>
+                    <th class="column-title">Tea </th>
+                    <th class="column-title">Chicken Litter </th>
+                    <th class="column-title">Bagasse Feed </th>
+                    <th class="column-title">Alcohol </th>
+                    <th class="column-title">Chinese Medicine </th>
+                    <th class="column-title">Energy Grass </th>
+                    <th class="column-title">Banana Fruit Shafts </th>
+                    <th class="column-title">Lemon </th>
+                    <th class="column-title">Percolate </th>
+                    <th class="column-title">Other </th>
+                  </tr>
+                </thead>
+
+                <tbody id="inputsTableBody">
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade data-upload-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Data Upload</h4>
+          </div>
+          <div class="modal-body">
+            <div class="x_panel">
+              <div class="x_content">
+                <p>Upload a CSV file containing your data here</p>
+                <form action="/home/data-upload" class="dropzone" id="data-upload"></form>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
+
+{% block javascripts %}
+  {{ super()}}
+  <!-- Chart.js -->
+  <script src="{{ url_for('static', filename='vendors/Chart.js/dist/Chart.min.js') }}"></script>
+  <!-- Dropzone -->
+  <script src="{{ url_for('static', filename='vendors/dropzone/dist/min/dropzone.min.js') }}"></script>
+{% endblock javascripts %}
