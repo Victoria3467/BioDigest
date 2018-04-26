@@ -1,39 +1,35 @@
-﻿Beijing,1,116.46,39.92,,,
-Tianjin,2,117.2,39.13,,,
-He Bei,3,114.48,38.03,,,
-Shan Xi,4,112.53,37.87,,,
-Inner Mongulia,5,111.65,40.82,,,
-Liao Ning,6,123.38,41.8,,,
-Ji Lin,7,125.35,43.88,,,
-Hei Long Jiang,8,126.63,45.75,,,
-Shang Hai,9,121.48,31.22,,,
-Jiang Su,10,118.78,32.04,,,
-Zhe Jiang,11,120.19,30.26,,,
-An Hui,12,117.27,31.86,,,
-Fu Jian,13,119.3,26.08,,,
-Jiang Xi,14,115.89,28.68,,,
-Shan Dong,15,117,36.65,,,
-He Nan,16,113.65,34.76,,,
-Hu Bei,17,114.31,30.52,,,
-Hu Nan,18,113,28.21,,,
-Guang Dong,19,113.23,23.16,,,
-Guang Xi,20,108.33,22.84,,,
-Hai Nan,21,110.35,20.02,,,
-Chong Qing,22,106.54,29.59,,,
-Si Chuan,23,104.06,30.67,,,
-Gui Zhou,24,106.71,26.57,,,
-Yun Nan,25,102.73,25.04,,,
-Xi Zang,26,91.11,29.97,,,
-Shaan Xi,27,108.95,34.27,,,
-Gan Su,28,103.73,36.03,,,
-Qing Hai,29,101.74,36.56,,,
-Ning Xia,30,106.27,38.47,,,
-Xin Jiang,31,87.68,43.77,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
+﻿formal_city,latitude,longitude,city,2016,res_2016
+Beijing,116.46,39.92,bei_jing,145.2,1324
+Tianjin,117.2,39.13,tian_jin,244.31,388
+He Bei,114.48,38.03,he_bei,3459.39,423
+Shan Xi,112.53,37.87,shan_xi_2,958.11,450
+Inner Mongulia,111.65,40.82,nei_meng_gu,1415.07,369
+Liao Ning,123.38,41.8,liao_ning,1859.55,387
+Ji Lin,125.35,43.88,ji_lin,1231.98,226
+Hei Long Jiang,126.63,45.75,hei_long_jiang,2873.86,145
+Shang Hai,121.48,31.22,shang_hai,148.53,1672
+Jiang Su,118.78,32.04,jiang_su,3714.64,2030
+Zhe Jiang,120.19,30.26,zhe_jiang,1521.19,1526
+An Hui,117.27,31.86,an_hui,2234.14,1214
+Fu Jian,119.3,26.08,fu_jian,1782.01,957
+Jiang Xi,115.89,28.68,jiang_xi,1446.89,346
+Shan Dong,117,36.65,shan_dong,4641.35,2057
+He Nan,113.65,34.76,he_nan,4577.16,1416
+Hu Bei,114.31,30.52,hu_bei,2921.27,1630
+Hu Nan,113,28.21,hu_nan,3255.11,800
+Guang Dong,113.23,23.16,guang_dong,3134.44,2958
+Guang Xi,108.33,22.84,guang_xi,2347.9,320
+Hai Nan,110.35,20.02,hai_nan,695.64,51
+Chong Qing,106.54,29.59,chong_qing,1151.77,1412
+Si Chuan,104.06,30.67,si_chuan,3710.97,1538
+Gui Zhou,106.71,26.57,gui_zhou,1888.64,511
+Yun Nan,102.73,25.04,yun_nan,1943.65,493
+Xi Zang,91.11,29.97,xi_zang,52.23,12
+Shaan Xi,108.95,34.27,shan_xi_1,2027.56,1128
+Gan Su,103.73,36.03,gan_su,1274.71,358
+Qing Hai,101.74,36.56,qing_hai,155.52,53
+Ning Xia,106.27,38.47,ning_xia,311.89,70
+Xin Jiang,87.68,43.77,xin_jiang,2163.11,95
+Tai Wan,121.4999,25.05,tai_wan,60,300
+Hong Kong,22.28552,114.15769,xiang_gang,100,500
+Macao,113.5,22.2,ao_men,120,400
