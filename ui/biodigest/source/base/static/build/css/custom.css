@@ -2071,3 +2071,8 @@ form:after {
 @media (max-width: 767px) {
    .dataTables_length { float:none; }
 }
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}

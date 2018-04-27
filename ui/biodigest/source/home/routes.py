@@ -23,14 +23,20 @@ def process_input_csv(file):
     totals = data.sum(axis=0).to_dict().items()
     totals.sort(key=lambda entry: -entry[1])
     data_vals = data.values.tolist()
+    data_columns = [k[0] for k in totals]
+    data_top = [data[col].tolist() for col in data_columns]
     predictions = list(model.predict_hainan(data))
+    shenzhen_predictions = list(model.predict_shenzhen(data))
 
     return {
         "forecast": {
             "xs": list(reader.iloc[:,0].values),
             "ys": predictions
         },
+        "shenzhen_predictions": shenzhen_predictions,
         "data": data_vals,
+        "data_columns": data_columns[:10],
+        "data_top": data_top[:10],
         "totals": totals[:6],
         "stats": {
             "entries": len(list(reader.iloc[:,0].values)),
@@ -43,6 +49,10 @@ def process_input_csv(file):
 @blueprint.route('/index')
 def index():
     return render_template('index.html')
+
+@blueprint.route('/map')
+def map():
+    return render_template('map.html')
 
 @blueprint.route('/<template>')
 def route_template(template):
