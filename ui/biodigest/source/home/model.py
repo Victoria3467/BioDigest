@@ -6,8 +6,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
-import statsmodels.api as sm
-from statsmodels.formula.api import ols
 from sklearn.linear_model import perceptron
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier

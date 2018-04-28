@@ -1,6 +1,5 @@
 flask
-flask_login
-flask_migrate
-flask_wtf
 gunicorn
 pandas
+xgboost
+scikit-learn
