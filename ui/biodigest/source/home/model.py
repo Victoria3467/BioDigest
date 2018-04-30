@@ -46,7 +46,7 @@ SHENZHEN_COLUMNS = [
 ]
 
 MULTITRAIN = True
-NUM_TRAIN_ITERS = 10
+NUM_TRAIN_ITERS = 30
 
 class Model:
     def __init__(self):
@@ -169,34 +169,34 @@ class Model:
                     curr_rf_model = random_forest
                     curr_rf_accuracy = rf_acc
 
-            for i in range(NUM_TRAIN_ITERS):
-                print "Training Shenzhen XGBoost model iteration", i + 1, "...",
-                X_traincla, y_traincla, X_testcla, y_testcla = self.split_shenzhen_data(data)
-                xgb1 = XGBClassifier(
-                    learning_rate = 0.1,
-                    n_estimators=1000,
-                    max_depth=3,
-                    min_child_weight=5,
-                    gamma=0.2,
-                    subsample=0.8,
-                    colsample_bytree=0.8,
-                    objective= 'binary:logistic',
-                    nthread=8,
-                    scale_pos_weight=8,
-                    seed=27)
-                xgb1.fit(X_traincla, y_traincla)
-                xgb_acc = xgb1.score(X_testcla, y_testcla)
+            # for i in range(NUM_TRAIN_ITERS):
+            #     print "Training Shenzhen XGBoost model iteration", i + 1, "...",
+            #     X_traincla, y_traincla, X_testcla, y_testcla = self.split_shenzhen_data(data)
+            #     xgb1 = XGBClassifier(
+            #         learning_rate = 0.1,
+            #         n_estimators=1000,
+            #         max_depth=3,
+            #         min_child_weight=5,
+            #         gamma=0.2,
+            #         subsample=0.8,
+            #         colsample_bytree=0.8,
+            #         objective= 'binary:logistic',
+            #         nthread=8,
+            #         scale_pos_weight=8,
+            #         seed=27)
+            #     xgb1.fit(X_traincla, y_traincla)
+            #     xgb_acc = xgb1.score(X_testcla, y_testcla)
 
-                print "Accuracy: ", xgb_acc
-                if xgb_acc > curr_xgb_accuracy:
-                    curr_xgb_model = xgb1
-                    curr_xgb_accuracy = xgb_acc
+            #     print "Accuracy: ", xgb_acc
+            #     if xgb_acc > curr_xgb_accuracy:
+            #         curr_xgb_model = xgb1
+            #         curr_xgb_accuracy = xgb_acc
 
         if curr_xgb_accuracy > curr_rf_accuracy:
             print "Selecting Shenzhen XGB model with accuracy", curr_xgb_accuracy, "Random forest scored", curr_rf_accuracy
             return curr_xgb_model
         else:
-            print "Selecting Shenzhen random forest model with accuracy", curr_rf_accuracy, "Random forest scored", curr_xgb_accuracy
+            print "Selecting Shenzhen random forest model with accuracy", curr_rf_accuracy, "XGBoost scored", curr_xgb_accuracy
             return curr_rf_model
 
     def predict_hainan(self, x):
