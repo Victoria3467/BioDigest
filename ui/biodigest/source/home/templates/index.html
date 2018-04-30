@@ -1,16 +1,32 @@
 {% extends "base_site.html" %}
 
-{% block title %} Forecast {% endblock title %}
+{% block title %} Forecaster {% endblock title %}
 
 {% block stylesheets %}
   {{ super() }}
 {% endblock stylesheets %}
 
 {% block content %}
-  <div class="right_col" role="main">
-    <div class="title_left">
-      <h1>BioDigest</h1>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid header-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">BioDigest | Forecaster</a>
+        <ul class="nav navbar-nav" style="float: right; margin-top: 3px; margin-left: 10px;">
+          <li><a href="/home/map" style="font-size: 16px; font-weight: 300;">Map</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="right_col" role="main">
+
     <br />
 
     <div class="row">

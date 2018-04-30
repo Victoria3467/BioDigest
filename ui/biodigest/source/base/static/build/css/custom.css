@@ -5,6 +5,10 @@ html , body{
 
 }
 
+.header-bar {
+    background-color: #34495E;
+}
+
 .full-width {
 
  width:100%;
@@ -366,7 +370,8 @@ a:focus {
     margin-bottom: 0
 }
 .navbar-header {
-    background: #34495E
+    background: #34495E;
+    width: 100%;
 }
 .navbar-right {
     margin-right: 0
@@ -499,7 +504,7 @@ a:focus {
     font-weight: 500;
     color: #ECF0F1 !important;
     margin-left: 0 !important;
-    line-height: 32px
+    font-size: 24px;
 }
 .site_title {
     text-overflow: ellipsis;
@@ -520,7 +525,7 @@ a:focus {
     text-decoration: none
 }
 .nav.navbar-nav>li>a {
-    color: #515356 !important
+    /*color: #515356 !important*/
 }
 .nav.top_menu>li>a {
     position: relative;

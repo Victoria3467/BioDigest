@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM conda/miniconda3:latest
 
 COPY requirements.txt .
 

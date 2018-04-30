@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
     <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <link href="{{ url_for('static', filename='build/css/custom.css') }}" rel="stylesheet">
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
 
@@ -23,9 +24,26 @@
                 top: 0.0%;
                 }
             </style>
-
+    <title>BioDigest | Mapper</title>
 </head>
 <body>
+
+      <nav class="navbar navbar-default">
+    <div class="container-fluid header-bar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">BioDigest | Mapper</a>
+        <ul class="nav navbar-nav" style="float: right; margin-top: 3px; margin-left: 10px;">
+          <li><a href="/home/index" style="font-size: 16px; font-weight: 300;">Forecast</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
             <div class="folium-map" id="map_c6d62f0b4cc2459daa397606628d0092" ></div>
 
@@ -39,7 +57,7 @@
 
             var map_c6d62f0b4cc2459daa397606628d0092 = L.map(
                                   'map_c6d62f0b4cc2459daa397606628d0092',
-                                  {center: [38, 103],
+                                  {center: [36, 103],
                                   zoom: 4,
                                   maxBounds: bounds,
                                   layers: [],

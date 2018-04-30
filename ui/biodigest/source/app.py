@@ -1,6 +1,5 @@
 from config import DebugConfig
 from flask import Flask
-from flask_migrate import Migrate
 from importlib import import_module
 from logging import basicConfig, DEBUG, getLogger, StreamHandler
 from os.path import abspath, dirname, join, pardir
