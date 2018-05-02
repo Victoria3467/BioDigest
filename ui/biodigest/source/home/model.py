@@ -46,7 +46,7 @@ SHENZHEN_COLUMNS = [
 ]
 
 MULTITRAIN = True
-NUM_TRAIN_ITERS = 30
+NUM_TRAIN_ITERS = 15
 
 class Model:
     def __init__(self):
