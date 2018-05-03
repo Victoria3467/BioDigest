@@ -52,7 +52,7 @@ function setUpModal() {
   Dropzone.autoDiscover = false;
 
   dataUploadModal = $('.data-upload-modal').modal({
-    backdrop: 'static'
+    // backdrop: 'static'
   });
 
   var myDropzone = new Dropzone("#data-upload", {

@@ -14,28 +14,10 @@ def route_default():
     return redirect(url_for('home_blueprint.index'))
 
 
-@blueprint.route('/<template>')
-def route_template(template):
-    return render_template(template + '.html')
-
-
-@blueprint.route('/fixed_<template>')
-def route_fixed_template(template):
-    return render_template('fixed/fixed_{}.html'.format(template))
-
-
 @blueprint.route('/page_<error>')
 def route_errors(error):
     return render_template('errors/page_{}.html'.format(error))
 
-
-@blueprint.route('/shutdown')
-def shutdown():
-    func = request.environ.get('werkzeug.server.shutdown')
-    if func is None:
-        raise RuntimeError('Not running with the Werkzeug Server')
-    func()
-    return 'Server shutting down...'
 
 ## Errors
 

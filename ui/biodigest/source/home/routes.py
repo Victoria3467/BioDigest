@@ -54,10 +54,6 @@ def index():
 def map():
     return render_template('map.html')
 
-@blueprint.route('/<template>')
-def route_template(template):
-    return render_template(template + '.html')
-
 @blueprint.route('/data-upload', methods=['POST'])
 def upload():
     if request.method == 'POST':
