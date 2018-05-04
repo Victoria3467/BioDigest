@@ -1,4 +1,4 @@
-﻿Year,Month,Day,Month #,Day #,Raw Biogas Produced (m3),BioCNG Produced （m3),BioCNG Sold (m3),Vehicle use (m3),Liquid Fertilizer Produced (t),Solid fertilizer produced (t),Wastewater flow to WWTP (unit?),Solid residues (kg),Pig Manure (t),Cassava (t),Fish waste water (t),Kitchen food waste (t),Municipal fecal residue (t),Tea waste (t),Chicken litter (t),Bagasse feed (t),Alcohol waste (t),Chinese medicine waste (t),Energy grass (t),Banana fruit shafts (t),Lemon waste (t),Percolate (t),Other waste (t),50% NaOH/kg,FeCl2/kg,PAM/kg,Defoamer/kg,Project electricity use/kWh,Office space electricity use/kWh,Water/m3,Diesel/L,
+﻿Year,Month,Day,Month #,Day #,Raw Biogas Produced (m3),BioCNG Produced （m3),BioCNG Sold (m3),Vehicle use (m3),Liquid Fertilizer Produced (t),Solid fertilizer produced (t),Wastewater flow to WWTP (unit?),Solid residues (kg),Pig Manure (t),Cassava (t),Fish waste water (t),Kitchen food waste (t),Municipal fecal residue (t),Tea waste (t),Chicken litter (t),Bagasse feed (t),Alcohol waste (t),Chinese medicine waste (t),Energy grass (t),Banana fruit shafts (t),Lemon waste (t),Percolate (t),Other waste (t),50% NaOH/kg,FeCl2/kg,PAM/kg,Defoamer/kg,Project electricity use/kWh,Office space electricity use/kWh,Water/m3,Diesel/L,extra
 2014,May,1,1,1,0,2024,3658,,0,0,,,6.82,0,0,0,0,0,0,15,0,0,0,0,0,0,26.44,0,0,0,0,2409,1296,0,0,
 2014,May,2,1,2,0,2909,4348,,0,0,,,0,0,0,0,0,0,0,15,0,0,0,0,0,0,28.92,0,0,0,0,2612,1302,0,130,
 2014,May,3,1,3,0,3020,0,,0,0,,,6.66,0,0,0,0,0,0,15,0,0,0,0,0,0,26.9,0,0,0,0,2824,1291,0,0,
@@ -131,7 +131,7 @@
 2014,September,7,5,130,0,3438,4048.9,,0,0,,,0,0,11,0,0,0,0,0,0,0,0,0,0,0,20,0,400,0,0,3819,2075,0,0,
 2014,September,8,5,131,0,3155,3910.2,,0,0,,,0,0,14.02,0,0,0,0,0,0,0,0,0,0,0,22.1,0,350,0,0,3878,2132,0,0,
 2014,September,9,5,132,0,3847,4328.86,,0,0,,,8.68,0,10,0,0,0,0,2,0,0,0,0,0,0,24,0,0,0,0,4879,2157,0,0,
-2014,September,10,5,133,0,3290,3297.47,,0,0,,,2.52,0,10,0,0, ,0,8,0,0,0,0,0,0,29.94,483,350,0,0,4504,2147,0,650,
+2014,September,10,5,133,0,3290,3297.47,,0,0,,,2.52,0,10,0,0,0,0,8,0,0,0,0,0,0,29.94,483,350,0,0,4504,2147,0,650,
 2014,September,11,5,134,0,3715,4062.17,,0,0,,,3.72,0,10.6,0,0,0,0,10,0,0,0,0,0,0,24,1326,300,0,0,4531,2231,0,0,
 2014,September,12,5,135,0,4441,4133.76,,0,0,,,3.78,0,0,0,0,0,0,14,0,0,0,0,0,0,18.58,1447,200,0,0,4755,2325,0,0,
 2014,September,13,5,136,0,2326,4079.21,,0,0,,,3.42,0,0,0,0,0,0,5.6,21.84,0,0,0,0,0,0,964.6,0,0,0,3268,2290,0,300,
