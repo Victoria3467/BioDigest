@@ -1,2 +1,9 @@
-# BioTesseract-I
-Biogas project
+# BioDigest
+
+### Abstract
+Biogas facilities in China do not have extremely efficient processes in place to convert waste input to biogas. These inefficiencies can be considerably reduced if biogas operators are well informed about them and the methods they can use to increase productivity and biogas output. The main focus of this study is to increase efficiency of the biogas production process through the determination of the set of waste inputs that will lead to increased biogas to obtained from the Hainan and Shenzhen biogas plants in China from May 2015 to January 2018 that had information on waste inputs and associated biogas output. To understand the most important inputs in the biogas production process, a range of machine learning models were implemented. The KNN model had the highest model accuracy for the Hainan biogas facility, with an 87% accuracy on the test set and the results highlight the importance of municipal fecal residue, kitchen food waste, percolate, and chicken litter to maximize efficiency of the biogas production process. Due to limited data available from the Shenzhen facility, the model accuracies were not as high, and thus this dataset was not used to make predictions.
+
+Developed for UC Berkeley Data-X Spring 2018.
+
+### Web App Instructions
+To run the application, install all the [requirements](https://github.com/Victoria3467/BioDigest/blob/master/ui/biodigest/requirements.txt), `cd` into [source](https://github.com/Victoria3467/BioDigest/tree/master/ui/biodigest/source), and run `gunicorn --bind 0.0.0.0:8000 app`. The app can then be visted at `localhost:8000`
